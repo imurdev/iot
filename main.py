@@ -2,9 +2,9 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, InputFile
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 from config import BOT_TOKEN, AUTHORIZED_USER_ID
-from utils.logics import get_status, export_logs, get_settings_menu, get_admin_panel
-from utils.thresholds import get_threshold_menu
-from utils.charts import generate_chart_image
+from logics import get_status, export_logs, get_settings_menu, get_admin_panel
+from thresholds import get_threshold_menu
+from charts import generate_chart_image
 
 main_menu = [
     [InlineKeyboardButton("📊 Стан системи", callback_data="status")],
